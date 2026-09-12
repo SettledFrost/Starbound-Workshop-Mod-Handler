@@ -1,0 +1,4 @@
+Directories = {
+    "ReadDir" : "",
+    "WriteDir" : ""
+}
