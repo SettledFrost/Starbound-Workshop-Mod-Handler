@@ -11,3 +11,5 @@ def fetchmods(Directory):
     return
 
 fetchmods(cfg.Directories["ReadDir"])
+
+#More to be done later
