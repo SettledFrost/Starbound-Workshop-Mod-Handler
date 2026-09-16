@@ -1,8 +1,9 @@
 import os
 
-from Config import Directories
-
-ReadDir = Directories["ReadDir"]
+def fetchFolders(Directory):
+    Folders = os.listdir(Directory)
+    Folders = [folder for folder in Folders if os.path.isdir(os.path.join(Directory, folder))]
+    return Folders
 
 def fetchFiles(Directory):
     Files = os.listdir(Directory)
@@ -16,5 +17,3 @@ def fetchFilesByExtension(Directory, Extension):
         if file.endswith(Extension):
             FilesExt.append(file)
     return FilesExt
-
-print(fetchFilesByExtension(ReadDir, ".txt"))

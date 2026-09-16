@@ -1,4 +1,0 @@
-Directories = {
-    "ReadDir" : "",
-    "WriteDir" : ""
-}
