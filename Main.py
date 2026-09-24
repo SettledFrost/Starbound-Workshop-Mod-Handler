@@ -82,10 +82,16 @@ def Step2(List):
 
 #Function to clone files into target write directory
 def Step3(Dictionary):
+    #Get a list of all keys or mod IDs
     keys = Dictionary.keys()
-    for key in keys:
-        print(f"{key} | {Dictionary[f"{key}"]}")
-    #resetScreen(0)
+    #For each key
+    for i, key in enumerate(keys):
+        #Clone the mod into the write directory
+        cl.cloneFile(f"{Read}\\{key}", DefaultFile, Write)
+        #Rename the mod
+        rn.renameFile(Write, DefaultFile, Dictionary[f"{key}"])
+        #Update the load bar
+        ld.printLoadBar(i+1, len(keys), "Clone")
 
 if __name__ == "__main__":
     #Check if the read and write directories exist

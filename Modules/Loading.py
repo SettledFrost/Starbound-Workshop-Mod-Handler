@@ -8,6 +8,8 @@ def printLoadBar(current, maximum, mode):
         process = "Deleted"
     elif mode == "Naming":
         process = "Named"
+    elif mode == "Clone":
+        process = "Cloned"
 
     #Get the percentage for the bar
     percentage = current / maximum
