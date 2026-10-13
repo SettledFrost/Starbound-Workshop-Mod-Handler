@@ -6,7 +6,7 @@ Ideally this tool will reduce or entirely remove the time taken hunting down wor
 
 How to use:
 
-Put in your steam workshop content folder directory as ReadDir inside the config file, put the destination folder for all the sorted mods in WriteDir and your game ID as Game under "CoreIDs". Then you simply run Main.py and the script does everything for you.
+Change your steam workshop Dir folder as needed the game ID has already been included(Default is Windows default install), put the destination folder for all the sorted mods in WriteDir and your game ID as Game under "CoreIDs". Then you simply run Main.py and the script does everything for you.
 
 WARNING!
 Setting the wrong directory in the config can and most likely will lead to all of the files in the wrong directory being deleted. The script heavily relies on correct user input so make sure you are using the right directories before executing! The creator of this script is not responsible for any files lost.
